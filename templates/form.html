@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form to Excel</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f7fb;
+      }
+
+      .container {
+        max-width: 520px;
+        margin: 48px auto;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
+        padding: 28px;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: 1.5rem;
+      }
+
+      label {
+        display: block;
+        margin-top: 14px;
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #d0d7e2;
+        border-radius: 6px;
+        padding: 10px 12px;
+        font-size: 0.95rem;
+      }
+
+      textarea {
+        min-height: 100px;
+        resize: vertical;
+      }
+
+      button {
+        margin-top: 18px;
+        background: #0b57d0;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 11px 18px;
+        font-size: 0.95rem;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0847ab;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Fill in the form</h1>
+      <form action="/download" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="text" />
+
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes"></textarea>
+
+        <button type="submit">Download Excel Spreadsheet</button>
+      </form>
+    </main>
+  </body>
+</html>

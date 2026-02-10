@@ -11,3 +11,18 @@ I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey t
 I'll meet you over there, can't wait to get started!
 
 This course is using the :sparkles: open source project [reveal.js](https://github.com/hakimel/reveal.js/). In some cases we’ve made changes to the history so it would behave during class, so head to the original project repo to learn more about the cool people behind this project.
+
+## Python form to Excel download
+
+A simple Flask app has been added so users can fill in a form and download the submitted data as an Excel `.xlsx` file.
+
+### Run locally
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python app.py
+```
+
+Open `http://127.0.0.1:5000` in your browser, fill out the form, and click **Download Excel Spreadsheet**.
